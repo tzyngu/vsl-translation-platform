@@ -1,0 +1,12 @@
+sample_id,original_video_path,label_name,absolute_path,predicted_label,confidence,correct
+dd_000538,C:\Users\ptran\Desktop\VSL\dataset\dd\dd_8.mp4,dd,/content/drive/MyDrive/VSL/processed/keypoints/dd/dd_000538.npy,d,0.9905764,False
+lucnao_000684,C:\Users\ptran\Desktop\VSL\dataset\lucnao\WIN_20251031_01_37_34_Pro.mp4,lucnao,/content/drive/MyDrive/VSL/processed/keypoints/lucnao/lucnao_000684.npy,odau,0.9902505,False
+e_000585,C:\Users\ptran\Desktop\VSL\dataset\e\WIN_20251031_01_31_37_Pro.mp4,e,/content/drive/MyDrive/VSL/processed/keypoints/e/e_000585.npy,b,0.9793956,False
+khoe_000641,C:\Users\ptran\Desktop\VSL\dataset\khoe\khoe_1.mp4,khoe,/content/drive/MyDrive/VSL/processed/keypoints/khoe/khoe_000641.npy,ai,0.9611038,False
+an_000046,C:\Users\ptran\Desktop\VSL\dataset\an\an_4.mp4,an,/content/drive/MyDrive/VSL/processed/keypoints/an/an_000046.npy,muonkhong,0.77705586,False
+buoisang_000288,C:\Users\ptran\Desktop\VSL\dataset\buoisang\WIN_20251031_01_07_30_Pro.mp4,buoisang,/content/drive/MyDrive/VSL/processed/keypoints/buoisang/buoisang_000288.npy,bandem,0.749147,False
+xinloi_001177,C:\Users\ptran\Desktop\VSL\dataset\xinloi\xinloi_5.mp4,xinloi,/content/drive/MyDrive/VSL/processed/keypoints/xinloi/xinloi_001177.npy,tuoi,0.7371587,False
+xinloi_001178,C:\Users\ptran\Desktop\VSL\dataset\xinloi\xinloi_6.mp4,xinloi,/content/drive/MyDrive/VSL/processed/keypoints/xinloi/xinloi_001178.npy,ban,0.66109914,False
+e_000575,C:\Users\ptran\Desktop\VSL\dataset\e\e_10.mp4,e,/content/drive/MyDrive/VSL/processed/keypoints/e/e_000575.npy,d,0.63688296,False
+ten_000943,C:\Users\ptran\Desktop\VSL\dataset\ten\ten_16.mp4,ten,/content/drive/MyDrive/VSL/processed/keypoints/ten/ten_000943.npy,ai,0.6066155,False
+ngoi_000790,C:\Users\ptran\Desktop\VSL\dataset\ngoi\ngoi_7.mp4,ngoi,/content/drive/MyDrive/VSL/processed/keypoints/ngoi/ngoi_000790.npy,v,0.2133169,False

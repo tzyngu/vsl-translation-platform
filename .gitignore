@@ -1,0 +1,30 @@
+# Secrets and local config
+.env
+*.env.local
+
+# Local virtual environments
+.venv/
+venv/
+env/
+
+# Data and generated user media
+dataset/
+media/
+note/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# Notebook and OS noise
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+tmp/
+temp/

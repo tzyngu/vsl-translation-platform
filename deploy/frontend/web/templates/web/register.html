@@ -1,0 +1,30 @@
+{% extends "web/base.html" %}
+{% block title %}Đăng ký | VSL Studio{% endblock %}
+{% block content %}
+<section class="auth-card">
+  <h1>Tạo tài khoản</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+    <label>Email{{ form.email }}{{ form.email.errors }}</label>
+    <label>Tên đăng nhập{{ form.username }}{{ form.username.errors }}</label>
+    <label>Mật khẩu{{ form.password1 }}{{ form.password1.errors }}</label>
+    <label>Nhập lại mật khẩu{{ form.password2 }}{{ form.password2.errors }}</label>
+    <fieldset class="avatar-picker">
+      <legend>Chọn avatar</legend>
+      {{ form.avatar.errors }}
+      <div class="avatar-options">
+        {% for value, label in form.avatar.field.choices %}
+        <label class="avatar-option">
+          <input type="radio" name="{{ form.avatar.html_name }}" value="{{ value }}" {% if form.avatar.value == value %}checked{% endif %} required>
+          <img src="/static/images/{{ value }}" alt="{{ label }}">
+          <span>{{ label }}</span>
+        </label>
+        {% endfor %}
+      </div>
+    </fieldset>
+    <button type="submit">Đăng ký</button>
+  </form>
+  <p>Đã có tài khoản? <a href="/login/">Đăng nhập</a></p>
+</section>
+{% endblock %}

@@ -1,0 +1,11 @@
+{
+  "seed": 42,
+  "sequence_length": 30,
+  "feature_dim": 126,
+  "num_folds": 5,
+  "batch_size": 64,
+  "epochs": 40,
+  "patience": 7,
+  "learning_rate": 0.001,
+  "quick_run": false
+}

@@ -1,0 +1,6 @@
+{% extends "web/base.html" %}
+{% block content %}
+<section class="page-head"><div><h1>Training jobs</h1><p>Phase 1 tạo job pending; worker Celery + Redis sẽ nối ở Phase 2.</p></div><button id="create-training-job">Tạo training job</button></section>
+<section id="training-job-list" class="stack"></section>
+{% endblock %}
+

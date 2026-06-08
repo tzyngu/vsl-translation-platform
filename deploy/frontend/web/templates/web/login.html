@@ -1,0 +1,73 @@
+{% extends "web/base.html" %}
+{% block title %}Đăng nhập | VSL Studio{% endblock %}
+
+{% block content %}
+<div class="login-page">
+  <div class="login-layout">
+
+    <!-- LEFT IMAGE -->
+    <section class="login-visual">
+      <img
+        src="/static/images/login_1.png"
+        alt="Minh họa nhận diện ngôn ngữ ký hiệu"
+      >
+    </section>
+
+    <!-- RIGHT LOGIN CARD -->
+    <section class="login-panel">
+      <div class="login-card">
+
+        <div class="login-title">
+          <img
+            src="/static/images/logo_hand.png"
+            alt="Logo bàn tay"
+            class="login-logo"
+          >
+          <h1>Đăng nhập</h1>
+        </div>
+
+        <div class="login-divider">
+          <span></span>
+          <i></i>
+          <span></span>
+        </div>
+
+        <form method="post" class="login-form">
+          {% csrf_token %}
+
+          {% if form.non_field_errors %}
+            <div class="form-error">
+              {{ form.non_field_errors }}
+            </div>
+          {% endif %}
+
+          <label>
+            <span>Tên đăng nhập</span>
+            {{ form.username }}
+          </label>
+
+          <label>
+            <span>Mật khẩu</span>
+            {{ form.password }}
+          </label>
+
+          <button type="submit">Đăng nhập</button>
+        </form>
+
+        <div class="login-divider bottom-divider">
+          <span></span>
+          <p>hoặc</p>
+          <span></span>
+        </div>
+
+        <p class="register-text">
+          Chưa có tài khoản?
+          <a href="/register/">Đăng ký</a>
+        </p>
+
+      </div>
+    </section>
+
+  </div>
+</div>
+{% endblock %}

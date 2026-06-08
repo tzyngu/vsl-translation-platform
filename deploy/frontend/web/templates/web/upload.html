@@ -1,0 +1,16 @@
+{% extends "web/base.html" %}
+{% block content %}
+<section class="card">
+  <h1>Thêm ký hiệu mới</h1>
+  <form id="gesture-form">
+    <label>Label kỹ thuật<input name="label_name" placeholder="xin_chao" required></label>
+    <label>Tên hiển thị<input name="display_name" placeholder="Xin chào" required></label>
+    <label>Mô tả<textarea name="description"></textarea></label>
+    <label class="inline"><input type="checkbox" name="is_public"> Chia sẻ công khai</label>
+    <label>Video mẫu<input type="file" name="files" accept="video/*" multiple required></label>
+    <button type="submit">Tạo và xử lý video</button>
+  </form>
+  <pre id="upload-result"></pre>
+</section>
+{% endblock %}
+

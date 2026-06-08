@@ -1,0 +1,31 @@
+{% extends "web/base.html" %}
+{% block content %}
+<div class="camera-page">
+<section class="page-head"><div><h1>Camera realtime</h1><p>Sliding window 30 frame, predict mỗi 4 frame và smoothing 3/5.</p></div></section>
+<section class="camera-layout">
+  <article class="card">
+    <video id="camera-video" autoplay playsinline muted></video>
+    <canvas id="camera-canvas" width="640" height="480" class="hidden"></canvas>
+    <div class="actions"><button id="start-camera">Mở camera</button><button id="stop-camera" class="secondary">Dừng</button></div>
+  </article>
+  <article class="card">
+    <h2>Nhận diện</h2>
+    <p>Tay: <strong id="hands-status">Chưa kết nối</strong></p>
+    <p>Cửa sổ: <strong id="window-status">0/30</strong></p>
+    <p>Dự đoán: <strong id="prediction-label">...</strong></p>
+    <p>Confidence: <strong id="prediction-confidence">...</strong></p>
+    <p>Latency backend: <strong id="prediction-latency">...</strong></p>
+    <h2>Chuỗi từ</h2>
+    <div id="word-list" class="word-list"></div>
+    <div class="actions"><button id="translate-button">Dịch câu</button><button id="reset-words" class="secondary">Reset</button></div>
+    <h2>Câu dịch</h2>
+    <p id="translated-sentence" class="translation">...</p>
+    <p>Nguồn dịch: <strong id="translation-provider">...</strong></p>
+  </article>
+</section>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="/static/js/label-display.js?v=20260602-label-display"></script>
+<script src="/static/js/camera.js?v=20260602-label-display"></script>
+{% endblock %}

@@ -1,0 +1,77 @@
+{
+  "created_at_utc": "2026-05-30T17:20:44.790409+00:00",
+  "selected_model": "transformer",
+  "selected_by": "mean_cross_validation_macro_f1",
+  "num_classes": 36,
+  "class_names": [
+    "a",
+    "ai",
+    "an",
+    "b",
+    "ban",
+    "bandem",
+    "baogio",
+    "bundau",
+    "buoichieu",
+    "buoisang",
+    "buoitrua",
+    "c",
+    "cacban",
+    "camon",
+    "cangay",
+    "chungtoi",
+    "d",
+    "dd",
+    "e",
+    "homqua",
+    "khoe",
+    "lucnao",
+    "may",
+    "muonkhong",
+    "ngoi",
+    "nha",
+    "odau",
+    "phaikhong",
+    "ten",
+    "thich",
+    "toi",
+    "tuoi",
+    "v",
+    "xinchao",
+    "xinloi",
+    "y"
+  ],
+  "input_shape": [
+    30,
+    126
+  ],
+  "config": {
+    "seed": 42,
+    "sequence_length": 30,
+    "feature_dim": 126,
+    "num_folds": 5,
+    "batch_size": 64,
+    "epochs": 40,
+    "patience": 7,
+    "learning_rate": 0.001,
+    "quick_run": false
+  },
+  "models": {
+    "lstm.keras": {
+      "sha256": "a2d86f31477c1cd869aab4a2d459ca2e965e5276391b81ab15bd20cd81dee51c",
+      "size_bytes": 1854489
+    },
+    "lstm_attention.keras": {
+      "sha256": "99f18bd90a534e4f92d2f9c0db987507aac2b0e15f049f73aa19ebde2a567dfa",
+      "size_bytes": 2754431
+    },
+    "lstm_transformer.keras": {
+      "sha256": "b93b64d356a8f37a86e8cd3e1af294baf385a6ec0a105057884a9ddac3b5b99a",
+      "size_bytes": 3171654
+    },
+    "transformer.keras": {
+      "sha256": "44d9fd7c7819062aec8fec6045967f91ae78ce647645522264c2e30ea705253e",
+      "size_bytes": 3621427
+    }
+  }
+}

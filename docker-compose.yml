@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: vsl-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: vsl_system
+      POSTGRES_USER: vsl_user
+      POSTGRES_PASSWORD: vsl_local_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - vsl_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  vsl_postgres_data:

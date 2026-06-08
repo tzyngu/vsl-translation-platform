@@ -1,0 +1,17 @@
+{% extends "web/base.html" %}
+{% block content %}
+<section class="hero">
+  <h1>Vietnamese Sign Language Studio</h1>
+  <p>Nhận diện ký hiệu realtime, quản lý dữ liệu cá nhân và phiên bản model.</p>
+  <div class="actions">
+    <a class="button" href="/camera/">Mở camera realtime</a>
+    <a class="button secondary" href="/gestures/new/">Thêm ký hiệu mới</a>
+  </div>
+</section>
+<section class="grid cols-3">
+  <article class="card"><h2>Ký hiệu</h2><p id="gesture-count">...</p></article>
+  <article class="card"><h2>Active model</h2><p id="active-model">...</p></article>
+  <article class="card"><h2>Backend</h2><p id="backend-health">...</p></article>
+</section>
+{% endblock %}
+
